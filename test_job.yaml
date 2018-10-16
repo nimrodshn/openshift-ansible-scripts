@@ -11,6 +11,15 @@ spec:
           image: openshift/origin-ansible:v3.11.0
           command: ["ansible-playbook"]
           env:
-          - name: PLAYBOOK_FILE
-            value: /playbooks/aws/openshift-cluster/provision_install.yml
+          - name: AWS_ACCESS_KEY_ID
+            valueFrom:
+                    secretKeyRef:
+                            name: default-aws-secret
+                            key: awsAccessKeyId                  
+          - name: AWS_SECRET_ACCESS_KEY
+            valueFrom:
+                    secretKeyRef:
+                            name: default-aws-secret
+                            key: awsSecretAccessKey
+
       restartPolicy: Never 

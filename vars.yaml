@@ -1,0 +1,26 @@
+---
+oo_clusterid: nimi
+registry_auth_token:
+  stdout: 1234
+scf_retval_openshift_cert: 1234
+scf_retval_openshift_key: 1234
+scf_retval_chain_cert: 1223
+scf_retval_openshiftapps_certs:
+  - 1234
+scf_retval_openshiftapps_keys:
+  - 1234
+g_registry_pull_username: yaacov
+registry_auth_token:
+  stdout: 1234
+g_aws_cloud_provider_access_key_id: 1234
+g_aws_cloud_provider_secret_access_key: 1234
+g_aws_s3_docker_secret_access_key: 1234
+g_aws_s3_docker_access_key_id: 1234
+oo_sublocation: "us-east-1"
+g_routers:
+  - { 'shard': 1234 }
+openshift_aws_clusterid: nimi
+oo_environment: 1234
+oa_compute_node_count: 1234
+oa_infra_node_count: 1234
+g_ami_id: 1234

@@ -1,0 +1,8 @@
+{
+	"name": "nimi",
+	"nodes": {
+		"master":1,
+		"infra":2,
+		"compute":2
+	}
+}

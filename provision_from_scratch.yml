@@ -1,4 +1,14 @@
 ---
+
+- hosts: localhost
+  tasks:
+  - name: process provision vars template
+    template:
+      src: "/usr/share/ansible/provisioning_vars.yml.j2"
+      dest: "/tmp/provisioning_vars.yml"
+  - name: Load provisioning vars
+    include_vars: /tmp/provisioning_vars.yml
+
 - import_playbook: prerequisites.yml
 
 - import_playbook: provision_install.yml
